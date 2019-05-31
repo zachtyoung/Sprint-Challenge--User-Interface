@@ -207,3 +207,65 @@ footer nav a {
    max-width: none;
    border: none;
 }
+.contact-body-wrap{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: max-content max-content;
+    margin: 25px 0;
+    grid-column-gap: 50px;
+}
+.contact-b-left{
+    grid-row: 2;
+}
+.contact-b-right{
+    grid-row: 2;
+}
+iframe{
+    max-width: 100%;
+    box-shadow: 10px 10px 15px 1px rgba(0,0,0,0.05);
+    
+}
+.contact-b-right h6{
+    margin-top: 1em;
+    font-weight: 100;
+    font-style: italic;
+    line-height: 1.5em;
+}
+.contact-b-right span{
+    margin-top: 1em;
+    font-weight: 800;
+    font-style: normal;
+}
+form{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(6, max-content);
+    padding: 0;
+    grid-row-gap: 10px;
+}
+
+textarea, input[type=text], input[type=tel], input[type=email]{
+    border: none;
+    background: #f4f5f7;
+    resize: none;
+    padding: 10px;
+    border: 1px solid rgb(240, 238, 238);
+    border-radius: 3px;
+}
+textarea{
+    height: 100px;
+}
+#submitBtn{
+    width: max-content;
+    margin: 10px auto;
+    padding: 8px 24px;
+    background: #00b0ff;
+    color: white;
+    border: none;
+    font-size: 1.2em;
+    border-radius: 2px;
+}
+#submitBtn:hover{
+    background: #0077c2;
+
+}
